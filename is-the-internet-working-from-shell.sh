@@ -34,16 +34,3 @@ while true; do
 	echo "$(date): the internet is alive" >> ping-log.txt; fi
 	sleep $naptime
 done
-
-
-# | grep -i "timeout\|unreachable\|no answer\|statistics\|transmitted\|avg"
-#ping 1.1.1.1 -i 1 -c 4 --apple-time | tee pinglog.txt
-#ping 1.1.1.1 -i 1 -c 4 | while read pong; do echo "$(date): $pong"; done | tee pinglog.txt
-
-#once per minute, append this to a log and display
-#ping target A 2-times then target B 2-times with 1s wait time
-#if either return TRUE then print the internet and the router is working
-#if neither return TRUE then ping the router
-#if the router returns TRUE then the internet is not working 
-#if the router returns FALSE then the router is not working
-#if ping 1.1.1.1 -i 1 -W 1 -c 2 >& /dev/null ; then echo something; fi
