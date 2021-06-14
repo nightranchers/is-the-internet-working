@@ -21,3 +21,10 @@ If you don't use cron, here's the usage
 pick your two favorite external IP addresses to perform the ping test and your local router local IP
 if the external addresses fail, it will test the router
 
+PSUEDOCODE
+#once per minute, append this to a log and display
+#ping target A 2-times then target B 2-times with 1s wait time
+#if either return TRUE then print the internet is alive
+#if neither return TRUE then ping the router
+#if the router returns TRUE then the internet is not working 
+#if the router returns FALSE then the router is not working
